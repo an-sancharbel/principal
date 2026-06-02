@@ -1,1 +1,230 @@
-Pagina principal
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoración Nocturna - San Chárbel Makhlouf</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #0b1020;
+      color: #f5f1e8;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(11,16,32,0.82), rgba(11,16,32,0.95)),
+                  url('https://images.unsplash.com/photo-1548625149-fc4a29cf7092?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      color: #d6b25e;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.7rem;
+      margin-top: 0;
+    }
+
+    .motto {
+      font-style: italic;
+      color: #f0d98a;
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    nav {
+      background: #141a2f;
+      text-align: center;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #f5f1e8;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d6b25e;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .card {
+      background: #171d35;
+      border: 1px solid rgba(214,178,94,0.35);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    }
+
+    .card h2 {
+      color: #d6b25e;
+      margin-top: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #8b6b2e;
+      color: white;
+      text-decoration: none;
+      padding: 14px 26px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+
+    .btn:hover {
+      background: #b48a3a;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      background: #070b16;
+      padding: 30px 15px;
+      color: #cfc7b2;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header h2 {
+        font-size: 1.3rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="inicio">
+    <h1>Adoración Nocturna Mexicana</h1>
+    <h2>Sección San Chárbel Makhlouf</h2>
+
+    <p class="motto">"Velad y orad" (Mateo 26, 41)</p>
+
+    <p>
+      Un apostolado de oración, reparación y adoración a Nuestro Señor
+      Jesucristo presente en la Sagrada Eucaristía.
+    </p>
+
+    <a class="btn" href="https://adoracion-nocturna-san-charbel.github.io/Documentos/" target="_blank">
+      📚 Biblioteca de Documentos
+    </a>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#quienes-somos">¿Quiénes somos?</a>
+    <a href="#vigilias">Vigilias</a>
+    <a href="#documentos">Documentos</a>
+    <a href="#informacion">Información</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="quienes-somos" class="card">
+      <h2>¿Quiénes somos?</h2>
+      <p>
+        La Adoración Nocturna Mexicana es una asociación de fieles católicos
+        dedicada a rendir culto y adoración a Jesús Sacramentado mediante
+        vigilias de oración, reparación y formación espiritual.
+      </p>
+
+      <p>
+        Nuestra Sección San Chárbel Makhlouf busca fomentar el amor a la
+        Eucaristía, la vida sacramental y la santificación de sus miembros,
+        siguiendo el ejemplo de fidelidad y entrega de San Chárbel.
+      </p>
+    </section>
+
+    <section id="vigilias" class="card">
+      <h2>Nuestras Vigilias</h2>
+      <p>
+        Celebramos nuestra Vigilia de Adoración los
+        <strong>segundos sábados de cada mes</strong>,
+        comenzando a las <strong>7:00 p.m.</strong>.
+      </p>
+
+      <p>
+        Durante la noche acompañamos al Señor con momentos de oración,
+        meditación, cantos, rezo del Santo Rosario y adoración eucarística.
+      </p>
+    </section>
+
+    <section id="documentos" class="card center">
+      <h2>Documentos y Material de Formación</h2>
+      <p>
+        En esta sección encontrarás documentos de formación, reglamentos,
+        oraciones, cantos y otros materiales de apoyo para los adoradores.
+      </p>
+
+      <a class="btn" href="https://adoracion-nocturna-san-charbel.github.io/Documentos/" target="_blank">
+        📖 Ver documentos
+      </a>
+    </section>
+
+    <section id="informacion" class="card">
+      <h2>¿Quieres integrarte o pedir información?</h2>
+      <p>
+        Si deseas formar parte de la Adoración Nocturna o conocer más sobre
+        nuestra Sección San Chárbel Makhlouf, puedes solicitar informes en la
+        Notaría Parroquial o asistir directamente a una de nuestras vigilias.
+      </p>
+
+      <p>
+        Nos reunimos los <strong>segundos sábados de cada mes</strong>,
+        iniciando a las <strong>7:00 p.m.</strong>.
+      </p>
+
+      <p>
+        Será una alegría recibirte y compartir contigo este encuentro de fe,
+        oración y adoración ante Jesús Sacramentado.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Bendito y alabado sea el Santísimo Sacramento del Altar.
+    </p>
+    <p>
+      Adoración Nocturna Mexicana - Sección San Chárbel Makhlouf
+    </p>
+  </footer>
+
+</body>
+</html>
+```
